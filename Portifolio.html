@@ -25,11 +25,41 @@
       max-width: 100%;
       border-radius: 50%;
     }
+    .corPrimaria{
+      background-color: #61566b;
+    }
+    .corSegundaria{
+      background-color: rgb(198, 160, 247);
+    }
+    p{
+      font-family: Lato "helvetice Neue" Arial, Helvetica, sans-serif;
+      color: black ipo !important;
+    }
+    .icones{
+      padding-left: 5px;
+    }
+
+    .titulosBrancos{
+      text-decoration: underline;
+      text-underline-position: below;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white;
+    }
+    .titulosVerdes{
+      text-decoration: underline;
+      text-underline-position: below;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: rgb(43, 73, 53);
+    }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class=" corSegundaria navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">Claudemir Martins Ferraz</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +86,7 @@
       </ul>
     </div>
   </nav>
-  <section class="jumbotron text-center">
+  <section class="jumbotron text-center corPrimaria">
     <div class="container">
       <img classe="foto-perfil" src="IMG_20220812_210326864.jpg" width="200" haight="200" alt="">
       <h1 class="jumbotron-heading">
@@ -87,6 +117,7 @@
   </section>
   <div class="album py-5 bg-light">
     <div class="container">
+<h2 class = "jumbotron-heading text-center">Projetos</h2>
       <div class="row">
         <div class="col-md-6">
           <div class="card mb-4 box-shadow">
@@ -220,19 +251,59 @@
   </div>
 
   <!--Sobre mim-->
-  <section class ='jumbotron text-center'>
-    <div class = 'container'>
-      <h2 classe = 'jumbotron-heading'>Sobre Mim</h2>
-      <p class ='lead'>Habilidade de desenvolvimento na linguagem Python e suas
+  <section class='jumbotron text-center corPrimaria'>
+    <div class='container'>
+      <h2 classe='jumbotron-heading'>Sobre Mim</h2>
+      <p class='lead'>Habilidade de desenvolvimento na linguagem Python e suas
         bibliotecas para web, automação, webscrapping, openCV para
         reconhecimento de imagem,
         SQL para banco de dados SGBD tanto Oracle quanto Azure e
         open-sources Postgres e MySQL.
         Especificamente para web, codo com HTML, CSS
-         </p>
+      </p>
     </div>
   </section>
 
+  <!--Frases de Inspirações-->
+
+  <section class='jumbotron text-center'>
+    <div class='container'>
+      <h2 classe='jumbotron-heading text-center'>
+        Frases
+      </h2>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">"Em Deus, nós confiamos. Todos os outros tragam dados"</p>
+        <footer class="blockquote-footer">W. Edwards Deming<cite title="Source Title">-Consultor Americano-</cite>
+        </footer>
+      </blockquote>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">"Não existem métodos fáceis para resolver problemas difíceis."</p>
+        <footer class="blockquote-footer">René Descartes<cite title="Source Title">- Filósofo e Matemático Francês
+            -</cite></footer>
+      </blockquote>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">"Se eu vi mais longe, foi por estar sobre ombros de gigantes."</p>
+        <footer class="blockquote-footer">Isaac Newton<cite title="Source Title"> -Astrônomo e Matemático- </cite>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!--Contato-->
+   <section>
+    <div>
+      <div class="container-fluid corPrimaria">
+          <h3 class="text-center"> Disponível para Oportunidades</h3>
+          <h4 class="text-center"> Claudemirmferraz@gmail.com</h4>
+      </div>
+    </div>
+   </section>
+
+  <!--Footer-->
+  <footer class="text-center corSegundaria">
+    <p>Profissional de Programação</p>
+
+  </footer>
 
 </body>
 
