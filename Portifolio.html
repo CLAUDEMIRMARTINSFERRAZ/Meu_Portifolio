@@ -53,14 +53,31 @@
       padding-bottom: 20px;
       text-transform: uppercase;
       font-weight: 700;
-      color: rgb(43, 73, 53);
+      color: rgb(51, 219, 155);
+    }
+    .textoBranco{
+      color: white !important;
+    }
+    .textoPreto{
+      color: rgba(4, 12, 12, 0.747);
+    }
+    .jumbotron {
+      margin-bottom: 0px;
+    }
+    .textoFooter {
+     margin: 0px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+    }
+    html{
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 
 <body>
   <nav class=" corSegundaria navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Claudemir Martins Ferraz</a>
+    <a class="navbar-brand textoBranco" href="#">Claudemir Martins Ferraz</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -73,15 +90,15 @@
       </ul>
       <ul class="navbar-nav">
         <li>
-          <a href="#projetos" class="nav-link"> Projetos</a>
+          <a href="#projetos" class="nav-link textoBranco" href="#projetos" > Projetos</a>
         <li>
-          <a href="#sobre-mim" class="nav-link">Sobre mim</a>
+          <a href="#sobre-mim" class="nav-link textoBranco"href="#sobre-mim">Sobre mim</a>
         </li>
         <li>
-          <a href="#depoimentos" class="nav-link">Frases</a>
+          <a href="#Frases" class="nav-link textoBranco"href="#Frases">Frases</a>
         </li>
         <li>
-          <a href="#" class="nav-link">Contato</a>
+          <a href="#contato" class="nav-link textoBranco"href="#contato">Contato</a>
         </li>
       </ul>
     </div>
@@ -89,19 +106,19 @@
   <section class="jumbotron text-center corPrimaria">
     <div class="container">
       <img classe="foto-perfil" src="IMG_20220812_210326864.jpg" width="200" haight="200" alt="">
-      <h1 class="jumbotron-heading">
+      <h1 class="jumbotron-heading textoPreto">
         <font style="vertical-align: inherit;">
           <font style="vertical-align: inherit;">Claudemir Martins Ferraz</font>
         </font>
       </h1>
-      <p class="lead text-muted">
+      <p class="jumbotron-heading titulosBrancos">
         <font style="vertical-align: inherit;">
           <font style="vertical-align: inherit;">PROGRAMADOR WEB JR
             / DESENVOLVEDOR BACK-END JR</font>
         </font>
       </p>
       <p>
-        <a href="#" class="btn btn-dark my-2">
+        <a href="#contato" class="btn btn-dark my-2">
           <font style="vertical-align: inherit;">
             <font style="vertical-align: inherit;">Contato</font>
           </font>
@@ -110,14 +127,14 @@
       <a href="https://github.com/CLAUDEMIRMARTINSFERRAZ"><i style="color:rgb(12, 12, 12)"
           class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/claudemir-martins-ferraz-208799169/"><i style="color:rgb(9, 93, 248)"
-          class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/claudemirmferraz/"><i style="color:rgb(250, 138, 10)"
-          class="fab fa-instagram"></i></a>
+          class="icones fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/claudemirmferraz/"><i style="color:rgb(250, 10, 10)"
+          class="icones fab fa-instagram"></i></a>
     </div>
   </section>
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-light" id="projetos">
     <div class="container">
-<h2 class = "jumbotron-heading text-center">Projetos</h2>
+<h2 class = "jumbotron-heading text-center titulosVerdes">Projetos</h2>
       <div class="row">
         <div class="col-md-6">
           <div class="card mb-4 box-shadow">
@@ -251,10 +268,10 @@
   </div>
 
   <!--Sobre mim-->
-  <section class='jumbotron text-center corPrimaria'>
+  <section class='blockquote text-center corPrimaria' id="sobre-mim">
     <div class='container'>
-      <h2 classe='jumbotron-heading'>Sobre Mim</h2>
-      <p class='lead'>Habilidade de desenvolvimento na linguagem Python e suas
+      <h2 class="jumbotron-heading titulosBrancos">Sobre Mim</h2>
+      <p class=' textoPreto'>Habilidade de desenvolvimento na linguagem Python e suas
         bibliotecas para web, automação, webscrapping, openCV para
         reconhecimento de imagem,
         SQL para banco de dados SGBD tanto Oracle quanto Azure e
@@ -266,9 +283,9 @@
 
   <!--Frases de Inspirações-->
 
-  <section class='jumbotron text-center'>
+  <section class='jumbotron text-center' id="Frases" >
     <div class='container'>
-      <h2 classe='jumbotron-heading text-center'>
+      <h2 class ="jumbotron-heading text-center titulosVerdes">
         Frases
       </h2>
       <blockquote class="blockquote text-center">
@@ -292,16 +309,17 @@
   <!--Contato-->
    <section>
     <div>
-      <div class="container-fluid corPrimaria">
-          <h3 class="text-center"> Disponível para Oportunidades</h3>
-          <h4 class="text-center"> Claudemirmferraz@gmail.com</h4>
+      <div class="container-fluid corPrimaria" id="contato">
+          <h3 style="padding-top: 60px;" class=" text-center titulosBrancos"> Disponível para Oportunidades</h3>
+          <a href="mailto:claudemirmferraz@gmail.com"><h4 
+         style="padding-top: 60px;" class="text-center"> Claudemirmferraz@gmail.com</h4></a>
       </div>
     </div>
    </section>
 
   <!--Footer-->
-  <footer class="text-center corSegundaria">
-    <p>Profissional de Programação</p>
+  <footer class="text-center corSegundaria textoFooter">
+          <p class = "textoBranco">Profissional de Programação</p>
 
   </footer>
 
